@@ -408,7 +408,7 @@ int ProcessTCP(int sock, mmr70_data_t *pdata)
 		if (str_is(buffer, "status"))
 		{
 			bzero(buffer, sizeof(buffer));
-			sprintf(buffer, "freq: %dKHz txpwr: %.2fmW power: '%s' mute: '%s' stereo: '%s' rds: '%s' rdsid: '%s' rdstext: '%s'\n", 
+			sprintf(buffer, "freq: %dKHz \ntxpwr: %.2fmW \npower: '%s' \nmute: '%s' \nstereo: '%s' \nrds: '%s' \nrdsid: '%s' \nrdstext: '%s'\n", 
 				pdata->frequency,
 				txpower[pdata->txpower],
 				pdata->power ? "on" : "off",
